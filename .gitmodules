@@ -1,15 +1,45 @@
-[submodule "native/sources/tree-sitter/src"]
-	path = native/sources/tree-sitter/src
-	url = https://github.com/tree-sitter/tree-sitter
-[submodule "native/sources/tree-sitter-lua/src"]
-	path = native/sources/tree-sitter-lua/src
-	url = https://github.com/Azganoth/tree-sitter-lua
-[submodule "native/sources/tree-sitter-cpp/src"]
-	path = native/sources/tree-sitter-cpp/src
-	url = https://github.com/tree-sitter/tree-sitter-cpp
-[submodule "native/sources/tree-sitter-c/src"]
-	path = native/sources/tree-sitter-c/src
-	url = https://github.com/tree-sitter/tree-sitter-c
-[submodule "native/sources/tree-sitter-json/src"]
-	path = native/sources/tree-sitter-json/src
-	url = https://github.com/tree-sitter/tree-sitter-json
+[submodule "native/vendor/tree-sitter"]
+	path = native/vendor/tree-sitter
+	url = git@github.com:tree-sitter/tree-sitter.git
+[submodule "native/vendor/tree-sitter-c"]
+	path = native/vendor/tree-sitter-c
+	url = git@github.com:tree-sitter/tree-sitter-c.git
+[submodule "native/vendor/tree-sitter-json"]
+	path = native/vendor/tree-sitter-json
+	url = git@github.com:tree-sitter/tree-sitter-json.git
+[submodule "native/vendor/tree-sitter-cpp"]
+	path = native/vendor/tree-sitter-cpp
+	url = git@github.com:tree-sitter/tree-sitter-cpp.git
+[submodule "native/vendor/tree-sitter-lua"]
+	path = native/vendor/tree-sitter-lua
+	url = git@github.com:tjdevries/tree-sitter-lua.git
+[submodule "native/vendor/tree-sitter-c-sharp"]
+	path = native/vendor/tree-sitter-c-sharp
+	url = git@github.com:tree-sitter/tree-sitter-c-sharp.git
+[submodule "native/vendor/tree-sitter-python"]
+	path = native/vendor/tree-sitter-python
+	url = git@github.com:tree-sitter/tree-sitter-python.git
+[submodule "native/vendor/tree-sitter-php"]
+	path = native/vendor/tree-sitter-php
+	url = git@github.com:tree-sitter/tree-sitter-php.git
+[submodule "native/vendor/tree-sitter-java"]
+	path = native/vendor/tree-sitter-java
+	url = git@github.com:tree-sitter/tree-sitter-java.git
+[submodule "native/vendor/tree-sitter-ruby"]
+	path = native/vendor/tree-sitter-ruby
+	url = git@github.com:tree-sitter/tree-sitter-ruby.git
+[submodule "native/vendor/tree-sitter-javascript"]
+	path = native/vendor/tree-sitter-javascript
+	url = git@github.com:tree-sitter/tree-sitter-javascript.git
+[submodule "native/vendor/tree-sitter-typescript"]
+	path = native/vendor/tree-sitter-typescript
+	url = git@github.com:tree-sitter/tree-sitter-typescript.git
+[submodule "native/vendor/tree-sitter-rust"]
+	path = native/vendor/tree-sitter-rust
+	url = git@github.com:tree-sitter/tree-sitter-rust.git
+[submodule "native/vendor/tree-sitter-go"]
+	path = native/vendor/tree-sitter-go
+	url = git@github.com:tree-sitter/tree-sitter-go.git
+[submodule "native/vendor/tree-sitter-scala"]
+	path = native/vendor/tree-sitter-scala
+	url = git@github.com:tree-sitter/tree-sitter-scala.git

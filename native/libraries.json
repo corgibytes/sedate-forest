@@ -1,0 +1,42 @@
+[
+    {
+        "name": "tree-sitter",
+        "include": [
+            "lib/include",
+            "lib/src"
+        ],
+        "compile": [
+            "lib/src/lib.c"
+        ]
+    },
+    {
+        "name": "tree-sitter-c",
+        "include": [
+            "src"
+        ],
+        "compile": [
+            "src/parser.c"
+        ]
+    },
+    {
+        "name": "tree-sitter-cpp",
+        "include": [ "src" ],
+        "compile": [
+            "src/parser.c",
+            "src/scanner.c"
+        ]
+    },
+    {
+        "name": "tree-sitter-json",
+        "include": [ "src" ],
+        "compile": [ "src/parser.c" ]
+    },
+    {
+        "name": "tree-sitter-lua",
+        "include": [ "src" ],
+        "compile": [
+            "src/parser.c",
+            "src/scanner.c"
+        ]
+    }
+]
