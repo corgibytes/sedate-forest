@@ -16,7 +16,7 @@ function Write-NativeProjectTemplate {
     $projectReferences = @()
     foreach ($library in $libraries) {
         $projectReferences += [XElement]::new("ProjectReference",
-            [XAttribute]::new("Include", "{0}/{0}.{1}" -f ($library.name, $ProjectType))
+            [XAttribute]::new("Include", "{0}/Corgibytes.SedateForest.{0}.{1}" -f ($library.name, $ProjectType))
         )
     }
 
@@ -32,15 +32,15 @@ function Write-NativeProjectTemplate {
 }
 
 function Write-NativeProject {
-    Write-NativeProjectTemplate -ProjectType "cproj" -Path "packaging/native.csproj"
+    Write-NativeProjectTemplate -ProjectType "cproj" -Path "packaging/Corgibytes.SedateForest.native.csproj"
 }
 
 function Write-NativeLibraryProject {
-    Write-NativeProjectTemplate -ProjectType "csproj" -Path "packaging/NativeLibrary.csproj"
+    Write-NativeProjectTemplate -ProjectType "csproj" -Path "packaging/Corgibytes.SedateForest.NativeLibrary.csproj"
 }
 
 function Write-NativeLibraryRuntimeProject {
-    Write-NativeProjectTemplate -ProjectType "runtime.csproj" -Path "packaging/NativeLibrary.runtime.csproj"
+    Write-NativeProjectTemplate -ProjectType "runtime.csproj" -Path "packaging/Corgibytes.SedateForest.NativeLibrary.runtime.csproj"
 }
 
 function Write-LibraryNativeProject {
@@ -84,7 +84,7 @@ function Write-LibraryNativeProject {
         )
     )
 
-    $projectDocument.ToString() | Set-Content -Path "$scriptDirectory/packaging/$LibraryName/$LibraryName.cproj"
+    $projectDocument.ToString() | Set-Content -Path "$scriptDirectory/packaging/$LibraryName/Corgibytes.SedateForest.$LibraryName.cproj"
 
 }
 
@@ -137,7 +137,7 @@ function Write-LibraryNativeLibraryProject {
         )
     )
 
-    $projectDocument.ToString() | Set-Content -Path "$scriptDirectory/packaging/$LibraryName/$LibraryName.csproj"
+    $projectDocument.ToString() | Set-Content -Path "$scriptDirectory/packaging/$LibraryName/Corgibytes.SedateForest.$LibraryName.csproj"
 
 }
 
@@ -187,7 +187,7 @@ function Write-LibraryNativeLibraryRuntimeProject {
         )
     )
 
-    $projectDocument.ToString() | Set-Content -Path "$scriptDirectory/packaging/$LibraryName/$LibraryName.runtime.csproj"
+    $projectDocument.ToString() | Set-Content -Path "$scriptDirectory/packaging/$LibraryName/Corgibytes.SedateForest.$LibraryName.runtime.csproj"
 
 }
 
